@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zmj.example.tryall">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <!-- uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/ -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <!-- Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zmj.example.tryall.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+            </meta-data>
+        </provider>
+
+        <activity android:name=".MainActivity"> <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainAct"
+            android:configChanges="orientation|screenSize"> <!-- .ui.TextInText -->
+        </activity>
+        <activity android:name=".ui.TextInText"> <!-- .ui.ViewPagerFgAct -->
+        </activity>
+        <activity android:name=".ui.ViewPagerFgAct"> <!-- .ui.Lunbotu -->
+        </activity>
+        <activity android:name=".ui.Lunbotu"> <!-- .MainActivity -->
+        </activity>
+        <activity android:name=".ui.TestHttpurlConnAct">
+        </activity>
+        <activity android:name=".ui.DataAnsis">
+        </activity>
+        <activity android:name=".ui.BreakPointDownloadAct">
+        </activity>
+        <activity android:name=".ui.TestRetrofitAct">
+        </activity>
+        <activity android:name=".ui.TestButterKnifeAct">
+        </activity>
+        <activity android:name=".ui.ParcelableDataAct">
+        </activity>
+        <activity android:name=".ui.TestGlideAct">
+        </activity>
+        <!--  -->
+        <activity
+            android:name=".ui.DanMuAct"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize">
+        </activity>
+        <activity android:name=".ui.LoginAct">
+        </activity>
+        <activity android:name=".ui.FingerPrintSuccessAct">
+        </activity>
+        <activity android:name=".ui.NewTakePhoto">
+        </activity>
+        <activity android:name=".ui.HeadPicAct">
+        </activity>
+        <activity android:name=".ui.GetCityAndWeatherAct">
+        </activity>
+    </application>
+
+</manifest>

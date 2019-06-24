@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ui_mainAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="textView实现底部导航"/>
+
+        <Button
+            android:id="@+id/btn_parcelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="TESTParcelable"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ui_TextInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="textView实现底部导航并显示消息"/>
+    <Button
+        android:id="@+id/ui_ViewPagerFgAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="RadioGroup+ViewPager实现底部导航"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ui_Lunbotu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="无限循环轮播图"/>
+        <Button
+            android:id="@+id/testHttpurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="HttpUrl测试"/>
+
+        <Button
+            android:id="@+id/btn_Dataanalysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="数据解析"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_TestRetrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="测试Retrofit"/>
+
+        <Button
+            android:id="@+id/btn_butterKnife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="测试ButterKnife"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_glideLoadImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Glide加载图片"/>
+        <Button
+            android:id="@+id/btn_danMu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="弹幕功能"/>
+
+        <Button
+            android:id="@+id/btn_fingerPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FingerPrint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_takePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8.0拍照"/>
+
+        <Button
+            android:id="@+id/btn_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模糊定位"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

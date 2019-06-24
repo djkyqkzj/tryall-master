@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TextInText">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:text="标题"/>
+
+        <View
+            android:id="@+id/div_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#000"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_menu_channel"
+            style="@style/tab_menu_text"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/table_menu_channel"
+            android:text="频道"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/tab_menu_message"
+            style="@style/tab_menu_text"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/table_menu_message"
+            android:button="@null"
+            android:text="信息"/>
+
+        <RadioButton
+            android:id="@+id/tab_menu_better"
+            style="@style/tab_menu_text"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/table_menu_better"
+            android:button="@null"
+            android:text="我的"/>
+
+        <RadioButton
+            android:id="@+id/tab_menu_setting"
+            style="@style/tab_menu_text"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/table_menu_my"
+            android:text="设置"/>
+
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/ly_tab_menu"
+        android:background="#000"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_tab_bar"
+        android:layout_below="@+id/ly_top_bar"
+        android:background="#FFF">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

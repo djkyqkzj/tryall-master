@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <!--数据库信息-->
+    <dbname value="demo"></dbname>
+    <version value="5"></version>
+
+    <!--表信息-->
+    <list>
+        <mapping class="com.zmj.example.tryall.model.News"></mapping>
+        <mapping class="com.zmj.example.tryall.model.Comment"></mapping>
+        <mapping class="com.zmj.example.tryall.model.Introduction"></mapping>
+        <mapping class="com.zmj.example.tryall.model.Category"></mapping>
+    </list>
+</litepal>

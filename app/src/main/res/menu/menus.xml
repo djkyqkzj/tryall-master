@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/one"
+          android:title="getpic"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+    <item android:id="@+id/two"
+          android:title="gethtml"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+    <item android:id="@+id/three"
+          android:title="showwebview"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+    <item android:id="@+id/four"
+          android:title="TESTpost"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+    <item android:id="@+id/analiesXML"
+          android:title="解析XML"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+
+</menu>
